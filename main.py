@@ -1,24 +1,3 @@
-echo "Change 1" >> sample.txt
-git add sample.txt
-GIT_AUTHOR_DATE="2024-05-01T10:00:00" GIT_COMMITTER_DATE="2024-05-01T10:00:00" git commit -m "Add feature: Event table creation"
-
-echo "Change 2" >> sample.txt
-git add sample.txt
-GIT_AUTHOR_DATE="2024-05-05T14:30:00" GIT_COMMITTER_DATE="2024-05-05T14:30:00" git commit -m "Integrate external weather API"
-
-echo "Change 3" >> sample.txt
-git add sample.txt
-GIT_AUTHOR_DATE="2024-05-10T11:15:00" GIT_COMMITTER_DATE="2024-05-10T11:15:00" git commit -m "Add regression model training code"
-
-echo "Change 4" >> sample.txt
-git add sample.txt
-GIT_AUTHOR_DATE="2024-05-15T16:45:00" GIT_COMMITTER_DATE="2024-05-15T16:45:00" git commit -m "Export Excel report from database"
-
-echo "Change 5" >> sample.txt
-git add sample.txt
-GIT_AUTHOR_DATE="2024-05-20T09:00:00" GIT_COMMITTER_DATE="2024-05-20T09:00:00" git commit -m "Add documentation and final cleanup"
-
-
 
 import requests
 import sqlite3
