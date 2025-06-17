@@ -1,5 +1,3 @@
-git add main.py
-GIT_AUTHOR_DATE="2024-05-01T10:00:00" GIT_COMMITTER_DATE="2024-05-01T10:00:00" git commit -m "Add main logic with model integration"
 
 import requests
 import sqlite3
