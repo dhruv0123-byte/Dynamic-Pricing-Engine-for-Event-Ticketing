@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS events (
+    event_id INTEGER PRIMARY KEY,
+    event_date TEXT NOT NULL,
+    location TEXT,
+    artist TEXT
+);
+
+CREATE TABLE IF NOT EXISTS sales (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_id INTEGER,
+    sales INTEGER,
+    recorded_at TEXT,
+    FOREIGN KEY (event_id) REFERENCES events(event_id)
+);
+
+CREATE TABLE IF NOT EXISTS external_factors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_id INTEGER,
+    weather TEXT,
+    temperature REAL,
+    artist_trend_score REAL,
+    FOREIGN KEY (event_id) REFERENCES events(event_id)
+);
+
+CREATE TABLE IF NOT EXISTS pricing_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_id INTEGER,
+    predicted_price REAL,
+    applied_at TEXT,
+    FOREIGN KEY (event_id) REFERENCES events(event_id)
+);
