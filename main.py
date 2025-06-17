@@ -1,6 +1,3 @@
-GIT_AUTHOR_DATE="2024-05-20T15:00:00" \
-GIT_COMMITTER_DATE="2024-05-20T15:00:00" \
-git commit -m "Add logging feature to main.py"
 
 
 
